@@ -1,8 +1,8 @@
-FROM php:7.2-cli-stretch
+FROM php:7.3-cli-stretch
 
 MAINTAINER Yuri Konotopov <ykonotopov@gnome.org>
 
-ENV PHPMYADMIN_VERSION=4.8.4 \
+ENV PHPMYADMIN_VERSION=4.9.2 \
 	GPG_KEY=3D06A59ECE730EB71B511C17CE752F178259BD92
 
 COPY config.inc.php /tmp
