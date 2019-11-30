@@ -22,6 +22,7 @@ RUN set -ex \
 	        libjpeg62-turbo-dev \
 	        libpng16-16 \
 	        libpng-dev \
+	        libzip-dev \
 	&& docker-php-ext-configure bz2 \
 	&& docker-php-ext-install -j$(nproc) bz2 \
 	&& docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
