@@ -51,13 +51,13 @@ objects:
   metadata:
     name: php
     annotations:
-      description: Keeps track of changes in the php:7.2-cli-stretch image
+      description: Keeps track of changes in the phpmyadmin/phpmyadmin image
   spec:
     tags:
-    - name: 7.2-cli-stretch
+    - name: latest
       from:
         kind: DockerImage
-        name: php:7.2-cli-stretch
+        name: phpmyadmin/phpmyadmin:latest
       importPolicy:
         scheduled: true
 - kind: BuildConfig
@@ -79,7 +79,7 @@ objects:
         forcePull: true
         from:
           kind: ImageStreamTag
-          name: phpmyadmin/phpmyadmin:latest
+          name: phpmyadmin:latest
         dockerfilePath: Dockerfile
     output:
       to:

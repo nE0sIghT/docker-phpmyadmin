@@ -13,4 +13,4 @@ RUN set -ex \
 	&& echo "<?php\n\$cfg['ExecTimeLimit'] = 0;" > /etc/phpmyadmin/config.user.inc.php \
 	&& chown phpmyadmin:phpmyadmin -R /etc/phpmyadmin
 
-USER phpmyadmin
+USER 1000
