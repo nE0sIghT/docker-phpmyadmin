@@ -7,6 +7,6 @@ RUN set -ex \
 	&& sed -i -e 's/80/8080/g' /etc/apache2/ports.conf \
 	&& sed -i -e 's/80/8080/g' /etc/apache2/sites-available/000-default.conf \
 	&& chown phpmyadmin:root -R /etc/phpmyadmin \
-	&& chmod 0550 /etc/phpmyadmin
+	&& chmod 0770 /etc/phpmyadmin
 
 USER phpmyadmin
