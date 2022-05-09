@@ -140,7 +140,7 @@ objects:
           - name: UPLOAD_LIMIT
             value: 1G
           - name: MAX_EXECUTION_TIME
-            value: 0
+            value: '0'
 parameters:
 - name: PROJECT_NAME
   displayName: Project name
