@@ -141,6 +141,8 @@ objects:
             value: 1G
           - name: MAX_EXECUTION_TIME
             value: '0'
+          - name: HIDE_PHP_VERSION
+            value: 'true'
 parameters:
 - name: PROJECT_NAME
   displayName: Project name
